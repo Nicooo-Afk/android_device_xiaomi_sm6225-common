@@ -526,6 +526,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libshim \
     libhidlbase_shim
 
