@@ -526,6 +526,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libshim \
     libhidlbase_shim
 
 # Shipping API
