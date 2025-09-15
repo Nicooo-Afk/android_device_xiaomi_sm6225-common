@@ -556,6 +556,7 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-utils \
     qti-telephony-utils-prd \
+    QtiTelephonyCompat \
     qti_telephony_utils.xml \
     qti_telephony_utils_prd.xml \
     telephony-ext \
