@@ -233,6 +233,8 @@ renderthread.skia.reduceopstasksplitting=true
 debug.sdm.support_writeback=0
 debug.sf.enable_egl_image_tracker=1
 debug.sf.defer_refresh_rate_when_off=1
+vendor.display.qdcm.disable_factory_mode=1
+vendor.display.qdcm.mode_combine=1
 
 # Displayfeature
 ro.vendor.all_modes.colorpick_adjust=true
