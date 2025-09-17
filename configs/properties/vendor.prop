@@ -324,6 +324,9 @@ vendor.usb.use_gadget_hal=0
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
 
+# Radio
+persist.vendor.radio.add_power_save=1
+
 # Zygote
 zygote.critical_window.minute=10
 
