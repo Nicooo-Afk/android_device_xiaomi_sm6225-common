@@ -66,13 +66,28 @@ vendor/lib64/vendor.qti.gnss-V4-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
 
 # IMS (system)
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/app/ImsRcsService/ImsRcsService.apk
 system_ext/priv-app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat
 system_ext/priv-app/ims/ims.apk;REQUIRED=QtiTelephonyCompat
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
+system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar
+system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar
+system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.callcapabilityaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.configservice-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.connectionaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.datachannelservice-V1-java.jar
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
@@ -80,6 +95,12 @@ system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar
 system_ext/framework/vendor.qti.ims.factoryaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar
+system_ext/framework/vendor.qti.ims.rcssipaidlservice-V1-java.jar
+system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar
 system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar
@@ -91,10 +112,14 @@ system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
 system_ext/lib64/lib-imsvtutils.so
 system_ext/lib64/libdiag_system.so
-system_ext/lib64/libimscamera_jni.so
-system_ext/lib64/libimsmedia_jni.so
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+system_ext/lib64/vendor.qti.ims.factoryaidlservice-V1-ndk.so
+
+
 
 # IMS ( vendor )
 vendor/bin/ims_rtp_daemon
