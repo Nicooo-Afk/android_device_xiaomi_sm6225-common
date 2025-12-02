@@ -15,7 +15,7 @@ BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 RELAX_USES_LIBRARY_CHECK := true
 
 # Inherit from proprietary files for miuicamera
--include device/xiaomi/miuicamera-topaz/BoardConfig.mk
+-include device/xiaomi/miuicamera-sapphire/BoardConfig.mk
 
 # A/B
 AB_OTA_UPDATER := true
@@ -140,7 +140,8 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
+
+-include vendor/infinity/config/BoardConfigReservedSize.mk
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -219,8 +220,7 @@ BOARD_AVB_ODM_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/framework_manifest.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
 ifneq ($(TARGET_IS_TABLET),true)
