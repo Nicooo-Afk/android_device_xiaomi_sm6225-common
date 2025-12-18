@@ -609,10 +609,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.qti \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    usb_compositions.conf
+    $(call inherit-product, vendor/qcom/opensource/usb/vendor_product.mk)
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_VENDOR_PROPERTIES += \
