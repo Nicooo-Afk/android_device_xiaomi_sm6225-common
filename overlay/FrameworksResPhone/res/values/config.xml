@@ -34,9 +34,6 @@
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
          If no value is found for the rat-name in use, the system default will be applied.
 
-    <!-- Configure tcp buffer sizes per network type in the form:
-         network-type:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
-
          The network-type must be a valid DataConfigNetworkType value. If no value is found for the
          network-type in use, config_tcp_buffers will be used instead.
     -->
@@ -127,5 +124,4 @@
          re-established on the target transport when condition is allowed for bringing up a
          new network. -->
     <bool name="config_enhanced_iwlan_handover_check">false</bool>
-
 </resources>
