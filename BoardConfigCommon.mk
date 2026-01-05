@@ -14,8 +14,8 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 RELAX_USES_LIBRARY_CHECK := true
 
-# Inherit from proprietary files for miuicamera
--include device/xiaomi/miuicamera-sapphire/BoardConfig.mk
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/xiaomi/GoogleCamera/config.mk) 
 
 # A/B
 AB_OTA_UPDATER := true
